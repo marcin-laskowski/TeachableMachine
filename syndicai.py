@@ -48,4 +48,4 @@ def run(input_data, output_data):
         # run the inference
         prediction = model.predict(data)
 
-        return prediction
+        return prediction.tolist()
