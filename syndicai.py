@@ -1,6 +1,7 @@
 import tensorflow.keras
 from PIL import Image, ImageOps
 import numpy as np
+from utils import get_result
 
 
 def run(input_data, output_data):
@@ -48,4 +49,4 @@ def run(input_data, output_data):
         # run the inference
         prediction = model.predict(data)
 
-        return prediction.tolist()
+        return get_result(prediction.tolist()[0])
