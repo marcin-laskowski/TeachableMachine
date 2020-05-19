@@ -48,4 +48,4 @@ def run(input_data, output_data):
         # run the inference
         prediction = model.predict(data)
 
-        return {"without_mug": prediction[0][0], "with_mug": prediction[0][1]}
+        return prediction
